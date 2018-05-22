@@ -21,8 +21,13 @@ function subtract(num1,num2){
 }
 
 //ANNOTATE HERE
+
 function calculateSum(array){
-  //WRITE YOUR CODE HERE
+  let result=0;
+  for (let i=0; i<array.length; i++) {
+    result=result + array[i];
+  }
+  return result;
 }
 //calculateSum([1,2,3])    => 6
 //calculateSum([-1,-2,-3]) => -6
@@ -88,5 +93,5 @@ function forEach(){
 module.exports = {
   add:add,
   subtract:subtract,
-  //add your functions here
+  calculateSum:calculateSum,
 }

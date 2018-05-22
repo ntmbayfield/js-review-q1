@@ -36,6 +36,22 @@ describe('all tests for your functions',()=>{
     });
   })
 
-  //
+  //CALCULATESUM
+  describe('calculate sum tests', ()=> {
+    const calculateSum = allFunctions.calculateSum;
+
+    it('should add the indexes in an array together', ()=>{
+      assert.equal(calculateSum([1, 2, 3]), 6);
+      assert.equal(calculateSum([2, 4, 6]), 12);
+    })
+
+    it('should have an array as its input', ()=>{
+      assert.isArray(([1, 2, 3]), "is an array");
+    })
+
+    it('should output number', ()=>{
+      assert.isNumber(calculateSum([1, 2, 3]));
+    })
+  })
 
 })
