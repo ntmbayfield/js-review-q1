@@ -52,6 +52,10 @@ describe('all tests for your functions',()=>{
     it('should output number', ()=>{
       assert.isNumber(calculateSum([1, 2, 3]));
     })
+
+    it('should handle negative numbers', ()=>{
+      assert.equal(calculateSum([-1, 2, 3, -4]), 0);
+    })
   })
 
 })
