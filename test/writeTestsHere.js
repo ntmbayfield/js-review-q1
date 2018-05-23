@@ -64,16 +64,16 @@ describe('all tests for your functions',()=>{
 
       describe('#map()', function() {
       //expect([1, 2]).to.be.an.instanceof(Array);
-        it('should output a new array', function()=>{
+        it('should output a new array', ()=>{
           expect([1,2,3].map(callback).to.be.an.instanceOf(Array));
         });
 
-        it('should be called on an array', function()=>{
-          expect([1,2,3]to.be.an.instanceOf(Array));
+        it('should be called on an array', ()=>{
+          expect([1,2,3]).to.be.an.instanceOf(Array);
         });
 
         it('should have one parameter which is a function', ()=>{
-          expect(callback()to.be.an.instanceOf(Function));
+          expect(callback()).to.be.an.instanceOf(Function);
         });
   });
 });
