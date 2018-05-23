@@ -94,4 +94,5 @@ module.exports = {
   add:add,
   subtract:subtract,
   calculateSum:calculateSum,
+  map:map,
 }

@@ -1,4 +1,5 @@
 const assert = require('chai').assert;
+const expect = require('chai').expect;
 const allFunctions = require('../index');
 
 describe('all tests for your functions',()=>{
@@ -57,5 +58,64 @@ describe('all tests for your functions',()=>{
       assert.equal(calculateSum([-1, 2, 3, -4]), 0);
     })
   })
+
+  //MAP
+    describe('Array', function() {
+
+      describe('#map()', function() {
+      //expect([1, 2]).to.be.an.instanceof(Array);
+        it('should output a new array', function()=>{
+          expect([1,2,3].map(callback).to.be.an.instanceOf(Array));
+        });
+
+        it('should be called on an array', function()=>{
+          expect([1,2,3]to.be.an.instanceOf(Array));
+        });
+
+        it('should have one parameter which is a function', ()=>{
+          expect(callback()to.be.an.instanceOf(Function));
+        });
+  });
+});
+
+  //   it('should be called on an array', ()=> {
+  //     assert.isArray([1, 2, 3].map())
+  //   })
+  //
+  //   it('should output a new array', ()=> {
+  //     assert.isArray();
+  //   })
+  //
+  //   it('should return an array that has the same length as the input array', ()=>{
+  //
+  //   })
+  //
+  //   it('should have one parameter which is a function')
+  // })
+
+
+  //filter
+
+
+  //reverseLettersInPlace
+
+
+  //allSimpleCombinations
+
+
+  //alphabeticalOrder
+
+
+  //returnLongestWord
+
+
+  //isPrime
+
+
+  //returnCoinBreakdown
+
+
+  //countVowels
+
 
 })
